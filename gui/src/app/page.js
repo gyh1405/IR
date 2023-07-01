@@ -11,9 +11,9 @@ const SearchEngine = ({ solrApiUrl }) => {
       const value = event.target.value;
 
      
-      // Apply the CORS middleware to the fetch request
-      const corsURL = `${solrApiUrl}/select?q=${value}`;
-      const response = await fetch(corsURL, {
+      const queryValue = `*${value}*`; // Use wildcard (*) to match any content containing the search value
+      const url = `${solrApiUrl}/select?q=${encodeURIComponent(queryValue)}`;
+      const response = await fetch(url, {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -26,6 +26,7 @@ const SearchEngine = ({ solrApiUrl }) => {
       if (response.ok) {
         // Get response data
         const data = await response.json();
+        //console.log(data);
         
         // Set search results
         setSearchResults(data.response.docs);
@@ -38,18 +39,22 @@ const SearchEngine = ({ solrApiUrl }) => {
   };
 
   return (
-    <div>
+    <div className='bg-sky-50 '>
       <h1>Search Engine GUI</h1>
       <input
+        className='shadow-md rounded-xl h-10 pl-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent'
         placeholder="Search..."
         onChange={handleSearch}
       />
       {searchResults.length > 0 ? (
         <ul>
+         
           {searchResults.map((item) => (
+
+            console.log(item),
             <li key={item.id}>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <h3>{item.name}</h3>
+              <p>{item.author}</p>
             </li>
           ))}
         </ul>
@@ -64,7 +69,7 @@ const SearchEngine = ({ solrApiUrl }) => {
 export default function Home() {
   return (
     <>
-    {<SearchEngine solrApiUrl="http://localhost:8983/solr/techproducts" />}
+    {<SearchEngine solrApiUrl="//localhost:8983/solr/techproducts" />}
     </>
   )
 }
