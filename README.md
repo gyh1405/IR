@@ -1,7 +1,5 @@
 # IR
- IR Project from School.
-
- This Search engine Project is built upon NextJS 13, Apache Nutch™, Apache Solr™ and Apache Zookeeper™. 
+ This Search Engine Project is built upon NextJS 13, Apache Nutch™, Apache Solr™ and Apache Zookeeper™. 
  
 [Apache Nutch™](https://nutch.apache.org) is a production ready Web Crawler, which is:
 *   Scalable: Relying on Apache Hadoop™ data structures, it can batch process large data volumes, and can also be tailored to smaller jobs.

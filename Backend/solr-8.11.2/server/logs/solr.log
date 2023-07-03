@@ -4744,3 +4744,39 @@ Was expecting one of:
 2023-07-03 00:39:14.712 INFO  (qtp2106165633-37) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=*Gl*} hits=0 status=0 QTime=1
 2023-07-03 00:39:14.796 INFO  (qtp2106165633-35) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=*G*} hits=0 status=0 QTime=1
 2023-07-03 00:39:14.881 INFO  (qtp2106165633-37) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=**} hits=0 status=0 QTime=1
+2023-07-03 01:11:17.016 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@696f0212{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-07-03 01:11:17.016 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2023-07-03 01:11:17.018 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1724399560
+2023-07-03 01:11:17.018 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.1.114:8983_solr
+2023-07-03 01:11:17.022 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2023-07-03 01:11:17.022 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.114:8983_solr as DOWN
+2023-07-03 01:11:17.026 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.c.SolrCore [techproducts_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@3382966f
+2023-07-03 01:11:17.026 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard1.replica_n1 tag=SolrCore@3382966f
+2023-07-03 01:11:17.026 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2f09d63f: rootName = null, domain = solr.core.techproducts.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.techproducts.shard1.replica_n1/com.codahale.metrics.MetricRegistry@75dcb629
+2023-07-03 01:11:17.029 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-03 01:11:17.029 INFO  (zkCallback-10-thread-6) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-03 01:11:17.029 INFO  (zkCallback-10-thread-7) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-03 01:11:17.029 INFO  (zkCallback-10-thread-8) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-03 01:11:17.030 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard1.leader tag=SolrCore@3382966f
+2023-07-03 01:11:17.033 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-07-03 01:11:17.037 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-07-03 01:11:17.037 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4091b9c3: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@45132977
+2023-07-03 01:11:17.038 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-07-03 01:11:17.038 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@415ef4d8: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@34c90e86
+2023-07-03 01:11:17.039 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-07-03 01:11:17.039 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@56cc9f29: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@3cbcb552
+2023-07-03 01:11:17.039 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2023-07-03 01:11:17.040 INFO  (closeThreadPool-34-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72057687424303104-192.168.1.114:8983_solr-n_0000000015) closing
+2023-07-03 01:11:17.040 INFO  (OverseerAutoScalingTriggerThread-72057687424303104-192.168.1.114:8983_solr-n_0000000015) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2023-07-03 01:11:17.040 INFO  (OverseerStateUpdate-72057687424303104-192.168.1.114:8983_solr-n_0000000015) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.1.114:8983_solr
+2023-07-03 01:11:17.041 INFO  (closeThreadPool-34-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72057687424303104-192.168.1.114:8983_solr-n_0000000015) closing
+2023-07-03 01:11:17.148 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72057687424303104-192.168.1.114:8983_solr-n_0000000015) closing
+2023-07-03 01:11:17.148 WARN  (Thread-11) [   ] o.a.z.s.ZooKeeperServerMain Server interrupted => java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100)
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100) ~[?:?]
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230) ~[?:?]
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:181) ~[?:?]
+	at org.apache.solr.cloud.SolrZkServer$1.run(SolrZkServer.java:121) ~[?:?]
+2023-07-03 01:11:17.148 INFO  (Thread-11) [   ] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2023-07-03 01:11:17.151 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@ab7a938{/solr,null,STOPPED}{/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp}
