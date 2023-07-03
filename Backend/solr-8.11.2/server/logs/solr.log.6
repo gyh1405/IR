@@ -1,137 +1,389 @@
-2023-07-01 06:00:13.215 INFO  (main) [   ] o.e.j.u.log Logging initialized @349ms to org.eclipse.jetty.util.log.Slf4jLog
-2023-07-01 06:00:13.298 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 20.0.1+9-29
-2023-07-01 06:00:13.302 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/contexts/] at interval 0
-2023-07-01 06:00:13.400 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2023-07-01 06:00:13.404 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2023-07-01 06:00:13.404 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2023-07-01 06:00:13.405 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2023-07-01 06:00:13.422 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2023-07-01 06:00:13.423 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.2
-2023-07-01 06:00:13.423 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
-2023-07-01 06:00:13.423 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2
-2023-07-01 06:00:13.423 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-07-01T06:00:13.423827Z
-2023-07-01 06:00:13.427 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr
-2023-07-01 06:00:13.427 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/solr.xml
-2023-07-01 06:00:13.456 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244, but no JMX reporters were configured - adding default JMX reporter.
-2023-07-01 06:00:13.622 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2023-07-01 06:00:13.674 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@37b57b54[provider=null,keyStore=null,trustStore=null]
-2023-07-01 06:00:13.674 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@37b57b54[provider=null,keyStore=null,trustStore=null]
-2023-07-01 06:00:13.731 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1e0895f5[provider=null,keyStore=null,trustStore=null]
-2023-07-01 06:00:13.731 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1e0895f5[provider=null,keyStore=null,trustStore=null]
-2023-07-01 06:00:13.745 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/zoo.cfg
-2023-07-01 06:00:13.746 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
-2023-07-01 06:00:13.746 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
-2023-07-01 06:00:13.760 WARN  (Thread-11) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
-2023-07-01 06:00:14.250 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
-2023-07-01 06:00:14.284 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
-2023-07-01 06:00:14.304 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
-2023-07-01 06:00:14.304 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
-2023-07-01 06:00:14.322 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
-2023-07-01 06:00:14.343 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.1.114:8983_solr
-2023-07-01 06:00:14.349 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72057737052422144-192.168.1.114:8983_solr-n_0000000009) starting
-2023-07-01 06:00:14.379 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.114:8983_solr
-2023-07-01 06:00:14.379 INFO  (OverseerStateUpdate-72057737052422144-192.168.1.114:8983_solr-n_0000000009) [   ] o.a.s.c.Overseer Starting to work on the main queue : 192.168.1.114:8983_solr
-2023-07-01 06:00:14.385 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
-2023-07-01 06:00:14.394 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
-2023-07-01 06:00:14.400 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2023-07-01 06:00:14.496 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2023-07-01 06:00:14.520 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
-2023-07-01 06:00:14.520 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
-2023-07-01 06:00:14.521 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
-2023-07-01 06:00:14.532 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr
-2023-07-01 06:00:14.532 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [techproducts_shard1_replica_n1]
-2023-07-01 06:00:14.535 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2023-07-01 06:00:14.550 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.2
-2023-07-01 06:00:14.555 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@ab7a938{/solr,file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp/,AVAILABLE}{/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp}
-2023-07-01 06:00:14.558 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@696f0212{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2023-07-01 06:00:14.558 INFO  (main) [   ] o.e.j.s.Server Started @1692ms
-2023-07-01 06:00:14.559 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2023-07-01 06:00:14.575 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
-2023-07-01 06:00:14.647 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2023-07-01 06:00:14.647 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2023-07-01 06:00:14.647 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2023-07-01 06:00:14.647 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2023-07-01 06:00:14.647 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2023-07-01 06:00:14.718 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2023-07-01 06:00:14.763 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.2
-2023-07-01 06:00:14.763 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2023-07-01 06:00:14.764 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
-2023-07-01 06:00:14.768 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2023-07-01 06:00:14.768 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2023-07-01 06:00:14.768 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2023-07-01 06:00:14.768 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2023-07-01 06:00:14.768 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2023-07-01 06:00:14.800 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2023-07-01 06:00:14.829 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard1_replica_n1' using configuration from configset techproducts.AUTOCREATED, trusted=true
-2023-07-01 06:00:14.837 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts.shard1.replica_n1' (registry 'solr.core.techproducts.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
-2023-07-01 06:00:14.839 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrCore [[techproducts_shard1_replica_n1] ] Opening new SolrCore at [/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/techproducts_shard1_replica_n1], dataDir=[/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/techproducts_shard1_replica_n1/data/]
-2023-07-01 06:00:14.965 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2023-07-01 06:00:14.965 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2023-07-01 06:00:14.971 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2023-07-01 06:00:14.971 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2023-07-01 06:00:15.028 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/techproducts.AUTOCREATED
-2023-07-01 06:00:15.029 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/techproducts.AUTOCREATED
-2023-07-01 06:00:15.030 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/techproducts.AUTOCREATED/managed-schema
-2023-07-01 06:00:15.030 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 2 is already the latest
-2023-07-01 06:00:15.033 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2023-07-01 06:00:15.034 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2023-07-01 06:00:15.036 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2023-07-01 06:00:15.043 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.114:8983_solr x:techproducts_shard1_replica_n1 c:techproducts s:shard1 r:core_node2) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2023-07-01 06:00:15.043 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.114:8983_solr x:techproducts_shard1_replica_n1 c:techproducts s:shard1 r:core_node2) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2023-07-01 06:00:15.045 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.114:8983_solr x:techproducts_shard1_replica_n1 c:techproducts s:shard1 r:core_node2) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrCore [techproducts_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
-2023-07-01 06:00:15.069 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/techproducts/leaders/shard1
-2023-07-01 06:00:15.075 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
-2023-07-01 06:00:15.075 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
-2023-07-01 06:00:15.075 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SyncStrategy Sync replicas to http://192.168.1.114:8983/solr/techproducts_shard1_replica_n1/
-2023-07-01 06:00:15.075 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
-2023-07-01 06:00:15.076 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SyncStrategy http://192.168.1.114:8983/solr/techproducts_shard1_replica_n1/ has no replicas
-2023-07-01 06:00:15.076 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/techproducts/leaders/shard1/leader after winning as /collections/techproducts/leader_elect/shard1/election/72057737052422144-core_node2-n_0000000009
-2023-07-01 06:00:15.079 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.1.114:8983/solr/techproducts_shard1_replica_n1/ shard1
-2023-07-01 06:00:15.082 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ZkController I am the leader, no recovery necessary
-2023-07-01 06:00:15.091 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:00:15.091 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:00:15.091 INFO  (zkCallback-10-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:00:15.091 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:00:18.021 INFO  (qtp2106165633-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1688191217991} status=0 QTime=3
-2023-07-01 06:00:18.023 INFO  (qtp2106165633-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1688191217991} status=0 QTime=5
-2023-07-01 06:00:18.030 INFO  (qtp2106165633-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1688191217991} status=0 QTime=0
-2023-07-01 06:00:18.036 INFO  (qtp2106165633-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1688191217991} status=0 QTime=0
-2023-07-01 06:00:18.043 INFO  (qtp2106165633-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1688191217991} status=0 QTime=2
-2023-07-01 06:00:26.721 INFO  (qtp2106165633-39) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=n} hits=0 status=0 QTime=54
-2023-07-01 06:00:26.768 INFO  (qtp2106165633-41) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=na} hits=0 status=0 QTime=0
-2023-07-01 06:00:26.885 INFO  (qtp2106165633-39) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=nam} hits=0 status=0 QTime=0
-2023-07-01 06:00:26.978 INFO  (qtp2106165633-41) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=name} hits=0 status=0 QTime=0
-2023-07-01 06:00:40.137 INFO  (qtp2106165633-39) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=name:lightning} hits=1 status=0 QTime=18
-2023-07-01 06:08:47.993 INFO  (qtp2106165633-33) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=name:lightning} hits=1 status=0 QTime=1
-2023-07-01 06:10:04.654 INFO  (qtp2106165633-40) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=name:lightning} hits=1 status=0 QTime=0
-2023-07-01 06:11:49.036 INFO  (qtp2106165633-41) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=n} hits=0 status=0 QTime=1
-2023-07-01 06:11:49.208 INFO  (qtp2106165633-36) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=na} hits=0 status=0 QTime=2
-2023-07-01 06:11:49.412 INFO  (qtp2106165633-41) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=nam} hits=0 status=0 QTime=1
-2023-07-01 06:11:49.581 INFO  (qtp2106165633-36) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.S.Request [techproducts_shard1_replica_n1]  webapp=/solr path=/select params={q=name} hits=0 status=0 QTime=2
-2023-07-01 06:19:32.137 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@696f0212{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2023-07-01 06:19:32.137 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2023-07-01 06:19:32.139 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=537483956
-2023-07-01 06:19:32.139 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.1.114:8983_solr
-2023-07-01 06:19:32.145 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
-2023-07-01 06:19:32.145 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.114:8983_solr as DOWN
-2023-07-01 06:19:32.148 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.c.SolrCore [techproducts_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@430e1ebb
-2023-07-01 06:19:32.148 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard1.replica_n1 tag=SolrCore@430e1ebb
-2023-07-01 06:19:32.148 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1611a5b9: rootName = null, domain = solr.core.techproducts.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.techproducts.shard1.replica_n1/com.codahale.metrics.MetricRegistry@3cf77295
-2023-07-01 06:19:32.151 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:19:32.152 INFO  (zkCallback-10-thread-6) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:19:32.152 INFO  (zkCallback-10-thread-7) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:19:32.152 INFO  (zkCallback-10-thread-8) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
-2023-07-01 06:19:32.153 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard1.leader tag=SolrCore@430e1ebb
-2023-07-01 06:19:32.156 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2023-07-01 06:19:32.160 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2023-07-01 06:19:32.160 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@71b6172c: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@1cd79db5
-2023-07-01 06:19:32.162 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2023-07-01 06:19:32.162 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1e7f19b4: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@5397cddf
-2023-07-01 06:19:32.163 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2023-07-01 06:19:32.163 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@235b4cb8: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@c24e800
-2023-07-01 06:19:32.163 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
-2023-07-01 06:19:32.164 INFO  (closeThreadPool-34-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72057737052422144-192.168.1.114:8983_solr-n_0000000009) closing
-2023-07-01 06:19:32.164 INFO  (OverseerStateUpdate-72057737052422144-192.168.1.114:8983_solr-n_0000000009) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.1.114:8983_solr
-2023-07-01 06:19:32.164 INFO  (OverseerAutoScalingTriggerThread-72057737052422144-192.168.1.114:8983_solr-n_0000000009) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
-2023-07-01 06:19:32.164 INFO  (closeThreadPool-34-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72057737052422144-192.168.1.114:8983_solr-n_0000000009) closing
-2023-07-01 06:19:32.273 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72057737052422144-192.168.1.114:8983_solr-n_0000000009) closing
+2023-07-01 06:20:11.015 INFO  (main) [   ] o.e.j.u.log Logging initialized @365ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-07-01 06:20:11.101 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 20.0.1+9-29
+2023-07-01 06:20:11.104 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/contexts/] at interval 0
+2023-07-01 06:20:11.209 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-07-01 06:20:11.212 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2023-07-01 06:20:11.212 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2023-07-01 06:20:11.213 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2023-07-01 06:20:11.232 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-07-01 06:20:11.233 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.2
+2023-07-01 06:20:11.233 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2023-07-01 06:20:11.233 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2
+2023-07-01 06:20:11.233 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-07-01T06:20:11.233657Z
+2023-07-01 06:20:11.236 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr
+2023-07-01 06:20:11.237 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/solr.xml
+2023-07-01 06:20:11.265 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244, but no JMX reporters were configured - adding default JMX reporter.
+2023-07-01 06:20:11.452 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2023-07-01 06:20:11.506 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@37b57b54[provider=null,keyStore=null,trustStore=null]
+2023-07-01 06:20:11.506 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@37b57b54[provider=null,keyStore=null,trustStore=null]
+2023-07-01 06:20:11.557 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1e0895f5[provider=null,keyStore=null,trustStore=null]
+2023-07-01 06:20:11.557 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1e0895f5[provider=null,keyStore=null,trustStore=null]
+2023-07-01 06:20:11.574 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/zoo.cfg
+2023-07-01 06:20:11.575 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2023-07-01 06:20:11.575 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2023-07-01 06:20:11.589 WARN  (Thread-11) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2023-07-01 06:20:12.079 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2023-07-01 06:20:12.112 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2023-07-01 06:20:12.129 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2023-07-01 06:20:12.129 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2023-07-01 06:20:12.144 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2023-07-01 06:20:12.164 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.1.114:8983_solr
+2023-07-01 06:20:12.169 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72057815553343488-192.168.1.114:8983_solr-n_0000000010) starting
+2023-07-01 06:20:12.196 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.114:8983_solr
+2023-07-01 06:20:12.197 INFO  (OverseerStateUpdate-72057815553343488-192.168.1.114:8983_solr-n_0000000010) [   ] o.a.s.c.Overseer Starting to work on the main queue : 192.168.1.114:8983_solr
+2023-07-01 06:20:12.203 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2023-07-01 06:20:12.213 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2023-07-01 06:20:12.218 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-07-01 06:20:12.309 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2023-07-01 06:20:12.336 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
+2023-07-01 06:20:12.336 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
+2023-07-01 06:20:12.336 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
+2023-07-01 06:20:12.349 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr
+2023-07-01 06:20:12.349 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [techproducts_shard1_replica_n1]
+2023-07-01 06:20:12.352 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2023-07-01 06:20:12.368 WARN  (main) [   ] o.e.j.s.BaseHolder  => java.lang.ClassNotFoundException: org.apache.catalina.filters.CorsFilter
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+java.lang.ClassNotFoundException: org.apache.catalina.filters.CorsFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:538) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+	at org.eclipse.jetty.util.Loader.loadClass(Loader.java:64) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.BaseHolder.doStart(BaseHolder.java:89) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:97) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:730) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:755) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:910) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:426) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.start(Server.java:423) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$3(XmlConfiguration.java:1907) ~[jetty-xml-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1857) ~[jetty-xml-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218) ~[start.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.start.Main.start(Main.java:491) ~[start.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.start.Main.main(Main.java:77) ~[start.jar:9.4.44.v20210927]
+2023-07-01 06:20:12.369 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.2
+2023-07-01 06:20:12.375 WARN  (main) [   ] o.e.j.w.WebAppContext Failed startup of context o.e.j.w.WebAppContext@ab7a938{/solr,file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp/,UNAVAILABLE}{/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp} => javax.servlet.UnavailableException: Class loading error for holder CorsFilter==org.apache.catalina.filters.CorsFilter@7e1ffe70{inst=false,async=false,src=DESCRIPTOR:file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp/WEB-INF/web.xml}
+	at org.eclipse.jetty.servlet.BaseHolder.doStart(BaseHolder.java:96)
+javax.servlet.UnavailableException: Class loading error for holder CorsFilter==org.apache.catalina.filters.CorsFilter@7e1ffe70{inst=false,async=false,src=DESCRIPTOR:file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp/WEB-INF/web.xml}
+	at org.eclipse.jetty.servlet.BaseHolder.doStart(BaseHolder.java:96) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:97) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:730) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:755) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:910) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524) ~[jetty-webapp-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:426) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.start(Server.java:423) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$3(XmlConfiguration.java:1907) ~[jetty-xml-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.security.AccessController.doPrivileged(AccessController.java:571) ~[?:?]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1857) ~[jetty-xml-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218) ~[start.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.start.Main.start(Main.java:491) ~[start.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.start.Main.main(Main.java:77) ~[start.jar:9.4.44.v20210927]
+2023-07-01 06:20:12.378 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@696f0212{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-07-01 06:20:12.378 INFO  (main) [   ] o.e.j.s.Server Started @1728ms
+2023-07-01 06:20:12.381 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2023-07-01 06:20:12.398 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2023-07-01 06:20:12.479 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2023-07-01 06:20:12.479 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2023-07-01 06:20:12.479 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2023-07-01 06:20:12.479 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2023-07-01 06:20:12.479 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2023-07-01 06:20:12.552 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-07-01 06:20:12.599 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.2
+2023-07-01 06:20:12.599 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2023-07-01 06:20:12.601 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2023-07-01 06:20:12.604 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2023-07-01 06:20:12.604 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2023-07-01 06:20:12.604 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2023-07-01 06:20:12.604 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2023-07-01 06:20:12.604 WARN  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2023-07-01 06:20:12.635 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-07-01 06:20:12.668 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'techproducts_shard1_replica_n1' using configuration from configset techproducts.AUTOCREATED, trusted=true
+2023-07-01 06:20:12.677 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts.shard1.replica_n1' (registry 'solr.core.techproducts.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1caa0244
+2023-07-01 06:20:12.681 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrCore [[techproducts_shard1_replica_n1] ] Opening new SolrCore at [/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/techproducts_shard1_replica_n1], dataDir=[/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr/techproducts_shard1_replica_n1/data/]
+2023-07-01 06:20:12.815 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-07-01 06:20:12.815 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-07-01 06:20:12.822 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-07-01 06:20:12.822 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-07-01 06:20:12.884 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/techproducts.AUTOCREATED
+2023-07-01 06:20:12.886 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/techproducts.AUTOCREATED
+2023-07-01 06:20:12.886 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/techproducts.AUTOCREATED/managed-schema
+2023-07-01 06:20:12.887 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 2 is already the latest
+2023-07-01 06:20:12.891 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-07-01 06:20:12.893 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2023-07-01 06:20:12.897 INFO  (coreLoadExecutor-23-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-07-01 06:20:12.905 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.114:8983_solr x:techproducts_shard1_replica_n1 c:techproducts s:shard1 r:core_node2) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-07-01 06:20:12.905 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.114:8983_solr x:techproducts_shard1_replica_n1 c:techproducts s:shard1 r:core_node2) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-07-01 06:20:12.908 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.1.114:8983_solr x:techproducts_shard1_replica_n1 c:techproducts s:shard1 r:core_node2) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SolrCore [techproducts_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2023-07-01 06:20:12.937 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/techproducts/leaders/shard1
+2023-07-01 06:20:12.943 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2023-07-01 06:20:12.943 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2023-07-01 06:20:12.943 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SyncStrategy Sync replicas to http://192.168.1.114:8983/solr/techproducts_shard1_replica_n1/
+2023-07-01 06:20:12.943 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+2023-07-01 06:20:12.944 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.SyncStrategy http://192.168.1.114:8983/solr/techproducts_shard1_replica_n1/ has no replicas
+2023-07-01 06:20:12.944 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/techproducts/leaders/shard1/leader after winning as /collections/techproducts/leader_elect/shard1/election/72057815553343488-core_node2-n_0000000010
+2023-07-01 06:20:12.949 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.1.114:8983/solr/techproducts_shard1_replica_n1/ shard1
+2023-07-01 06:20:12.952 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.1.114:8983_solr) [c:techproducts s:shard1 r:core_node2 x:techproducts_shard1_replica_n1] o.a.s.c.ZkController I am the leader, no recovery necessary
+2023-07-01 06:20:12.961 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:20:12.961 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:20:12.961 INFO  (zkCallback-10-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:20:12.961 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:21:12.367 WARN  (MetricsHistoryHandler-22-thread-1) [   ] o.a.s.c.s.i.SolrClientNodeStateProvider could not get tags from node 192.168.1.114:8983_solr => org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<title>Error 503 Service Unavailable</title>
+</head>
+<body><h2>HTTP ERROR 503 Service Unavailable</h2>
+<table>
+<tr><th>URI:</th><td>/solr/admin/metrics</td></tr>
+<tr><th>STATUS:</th><td>503</td></tr>
+<tr><th>MESSAGE:</th><td>Service Unavailable</td></tr>
+<tr><th>SERVLET:</th><td>-</td></tr>
+</table>
+
+</body>
+</html>
+
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:635) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:266) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:248) ~[?:?]
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1290) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invoke(SolrClientNodeStateProvider.java:389) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invokeWithRetry(SolrClientNodeStateProvider.java:354) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchReplicaMetrics(SolrClientNodeStateProvider.java:197) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchReplicaMetrics(SolrClientNodeStateProvider.java:187) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.getReplicaInfo(SolrClientNodeStateProvider.java:170) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectGlobalMetrics(MetricsHistoryHandler.java:506) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectMetrics(MetricsHistoryHandler.java:394) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.lambda$new$0(MetricsHistoryHandler.java:241) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-07-01 06:21:12.371 WARN  (MetricsHistoryHandler-22-thread-1) [   ] o.a.s.c.s.i.SolrClientNodeStateProvider could not get tags from node 192.168.1.114:8983_solr => org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<title>Error 503 Service Unavailable</title>
+</head>
+<body><h2>HTTP ERROR 503 Service Unavailable</h2>
+<table>
+<tr><th>URI:</th><td>/solr/admin/metrics</td></tr>
+<tr><th>STATUS:</th><td>503</td></tr>
+<tr><th>MESSAGE:</th><td>Service Unavailable</td></tr>
+<tr><th>SERVLET:</th><td>-</td></tr>
+</table>
+
+</body>
+</html>
+
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:635) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:266) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:248) ~[?:?]
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1290) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invoke(SolrClientNodeStateProvider.java:389) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invokeWithRetry(SolrClientNodeStateProvider.java:354) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchReplicaMetrics(SolrClientNodeStateProvider.java:197) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$AutoScalingSnitch.getRemoteInfo(SolrClientNodeStateProvider.java:245) ~[?:?]
+	at org.apache.solr.common.cloud.rule.ImplicitSnitch.getTags(ImplicitSnitch.java:76) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchTagValues(SolrClientNodeStateProvider.java:140) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.getNodeValues(SolrClientNodeStateProvider.java:129) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectGlobalMetrics(MetricsHistoryHandler.java:523) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectMetrics(MetricsHistoryHandler.java:394) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.lambda$new$0(MetricsHistoryHandler.java:241) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-07-01 06:22:12.394 WARN  (MetricsHistoryHandler-22-thread-1) [   ] o.a.s.c.s.i.SolrClientNodeStateProvider could not get tags from node 192.168.1.114:8983_solr => org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<title>Error 503 Service Unavailable</title>
+</head>
+<body><h2>HTTP ERROR 503 Service Unavailable</h2>
+<table>
+<tr><th>URI:</th><td>/solr/admin/metrics</td></tr>
+<tr><th>STATUS:</th><td>503</td></tr>
+<tr><th>MESSAGE:</th><td>Service Unavailable</td></tr>
+<tr><th>SERVLET:</th><td>-</td></tr>
+</table>
+
+</body>
+</html>
+
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:635) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:266) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:248) ~[?:?]
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1290) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invoke(SolrClientNodeStateProvider.java:389) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invokeWithRetry(SolrClientNodeStateProvider.java:354) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchReplicaMetrics(SolrClientNodeStateProvider.java:197) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchReplicaMetrics(SolrClientNodeStateProvider.java:187) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.getReplicaInfo(SolrClientNodeStateProvider.java:170) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectGlobalMetrics(MetricsHistoryHandler.java:506) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectMetrics(MetricsHistoryHandler.java:394) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.lambda$new$0(MetricsHistoryHandler.java:241) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-07-01 06:22:12.398 WARN  (MetricsHistoryHandler-22-thread-1) [   ] o.a.s.c.s.i.SolrClientNodeStateProvider could not get tags from node 192.168.1.114:8983_solr => org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.114:8983/solr: Expected mime type application/octet-stream but got text/html. <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<title>Error 503 Service Unavailable</title>
+</head>
+<body><h2>HTTP ERROR 503 Service Unavailable</h2>
+<table>
+<tr><th>URI:</th><td>/solr/admin/metrics</td></tr>
+<tr><th>STATUS:</th><td>503</td></tr>
+<tr><th>MESSAGE:</th><td>Service Unavailable</td></tr>
+<tr><th>SERVLET:</th><td>-</td></tr>
+</table>
+
+</body>
+</html>
+
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:635) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:266) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:248) ~[?:?]
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1290) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invoke(SolrClientNodeStateProvider.java:389) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$ClientSnitchCtx.invokeWithRetry(SolrClientNodeStateProvider.java:354) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchReplicaMetrics(SolrClientNodeStateProvider.java:197) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider$AutoScalingSnitch.getRemoteInfo(SolrClientNodeStateProvider.java:245) ~[?:?]
+	at org.apache.solr.common.cloud.rule.ImplicitSnitch.getTags(ImplicitSnitch.java:76) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.fetchTagValues(SolrClientNodeStateProvider.java:140) ~[?:?]
+	at org.apache.solr.client.solrj.impl.SolrClientNodeStateProvider.getNodeValues(SolrClientNodeStateProvider.java:129) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectGlobalMetrics(MetricsHistoryHandler.java:523) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.collectMetrics(MetricsHistoryHandler.java:394) ~[?:?]
+	at org.apache.solr.handler.admin.MetricsHistoryHandler.lambda$new$0(MetricsHistoryHandler.java:241) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-07-01 06:22:23.599 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@696f0212{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-07-01 06:22:23.599 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2023-07-01 06:22:23.600 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=537483956
+2023-07-01 06:22:23.600 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.1.114:8983_solr
+2023-07-01 06:22:23.604 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2023-07-01 06:22:23.604 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.114:8983_solr as DOWN
+2023-07-01 06:22:23.610 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.c.SolrCore [techproducts_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@875f9fa
+2023-07-01 06:22:23.610 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts.shard1.replica_n1 tag=SolrCore@875f9fa
+2023-07-01 06:22:23.610 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@59a57512: rootName = null, domain = solr.core.techproducts.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.techproducts.shard1.replica_n1/com.codahale.metrics.MetricRegistry@68f9142f
+2023-07-01 06:22:23.612 INFO  (zkCallback-10-thread-6) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:22:23.612 INFO  (zkCallback-10-thread-7) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:22:23.612 INFO  (zkCallback-10-thread-8) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:22:23.612 INFO  (zkCallback-10-thread-9) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/techproducts/state.json] for collection [techproducts] has occurred - updating... (live nodes size: [1])
+2023-07-01 06:22:23.615 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.techproducts.shard1.leader tag=SolrCore@875f9fa
+2023-07-01 06:22:23.619 INFO  (coreCloseExecutor-32-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-07-01 06:22:23.622 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-07-01 06:22:23.622 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4fb56bea: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@1cd79db5
+2023-07-01 06:22:23.623 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-07-01 06:22:23.623 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4346808: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@5397cddf
+2023-07-01 06:22:23.624 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-07-01 06:22:23.624 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@17fede14: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@c24e800
+2023-07-01 06:22:23.624 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2023-07-01 06:22:23.625 INFO  (closeThreadPool-34-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72057815553343488-192.168.1.114:8983_solr-n_0000000010) closing
+2023-07-01 06:22:23.625 INFO  (OverseerStateUpdate-72057815553343488-192.168.1.114:8983_solr-n_0000000010) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.1.114:8983_solr
+2023-07-01 06:22:23.625 INFO  (OverseerAutoScalingTriggerThread-72057815553343488-192.168.1.114:8983_solr-n_0000000010) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2023-07-01 06:22:23.625 INFO  (closeThreadPool-34-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72057815553343488-192.168.1.114:8983_solr-n_0000000010) closing
+2023-07-01 06:22:23.734 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72057815553343488-192.168.1.114:8983_solr-n_0000000010) closing
+2023-07-01 06:22:23.734 WARN  (Thread-11) [   ] o.a.z.s.ZooKeeperServerMain Server interrupted => java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100)
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100) ~[?:?]
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230) ~[?:?]
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:181) ~[?:?]
+	at org.apache.solr.cloud.SolrZkServer$1.run(SolrZkServer.java:121) ~[?:?]
+2023-07-01 06:22:23.734 INFO  (Thread-11) [   ] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2023-07-01 06:22:23.735 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@ab7a938{/solr,null,STOPPED}{/Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/solr-webapp/webapp}

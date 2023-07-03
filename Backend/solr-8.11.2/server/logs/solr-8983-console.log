@@ -1,13 +1,13 @@
 Java HotSpot(TM) 64-Bit Server VM warning: -XX:+UseLargePages not supported in this VM
-2023-07-01 08:25:50.338 INFO  (main) [   ] o.e.j.u.log Logging initialized @607ms to org.eclipse.jetty.util.log.Slf4jLog
-2023-07-01 08:25:50.422 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 20.0.1+9-29
-2023-07-01 08:25:50.426 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/contexts/] at interval 0
-2023-07-01 08:25:50.527 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2023-07-01 08:25:50.530 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2023-07-01 08:25:50.530 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2023-07-01 08:25:50.531 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2023-07-01 08:25:50.551 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2023-07-01 08:25:50.552 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.2
-2023-07-01 08:25:50.552 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
-2023-07-01 08:25:50.552 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2
-2023-07-01 08:25:50.552 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-07-01T08:25:50.552957Z
+2023-07-03 00:27:43.338 INFO  (main) [   ] o.e.j.u.log Logging initialized @367ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-07-03 00:27:43.430 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 20.0.1+9-29
+2023-07-03 00:27:43.433 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2/server/contexts/] at interval 0
+2023-07-03 00:27:43.559 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-07-03 00:27:43.563 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2023-07-03 00:27:43.563 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2023-07-03 00:27:43.564 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2023-07-03 00:27:43.583 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-07-03 00:27:43.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.2
+2023-07-03 00:27:43.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2023-07-03 00:27:43.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/gyh/Desktop/IR_Project/IR/Backend/solr-8.11.2
+2023-07-03 00:27:43.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-07-03T00:27:43.585876Z

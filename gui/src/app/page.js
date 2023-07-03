@@ -1,5 +1,5 @@
 
-// 'use client'
+'use client'
 // import React, { useState } from 'react';
 
 // const SearchEngine = ({ solrApiUrl }) => {
@@ -109,7 +109,7 @@ const SearchEngine = ({ solrApiUrl }) => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen bg-blue-50'>
+    <div className='flex flex-col items-center justify-center min-h-screen bg-sky-50'>
       <h1 className='text-4xl mb-8'>Search Engine GUI</h1>
       <input
         className='mb-8 px-3 py-2 w-1/2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent'
