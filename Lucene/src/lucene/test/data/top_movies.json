@@ -1,0 +1,1502 @@
+[
+    {
+        "rank": 1,
+        "title": "The Shawshank Redemption",
+        "rating": "9.2",
+        "year": "1994"
+    },
+    {
+        "rank": 2,
+        "title": "The Godfather",
+        "rating": "9.2",
+        "year": "1972"
+    },
+    {
+        "rank": 3,
+        "title": "The Dark Knight",
+        "rating": "9.0",
+        "year": "2008"
+    },
+    {
+        "rank": 4,
+        "title": "The Godfather Part II",
+        "rating": "9.0",
+        "year": "1974"
+    },
+    {
+        "rank": 5,
+        "title": "12 Angry Men",
+        "rating": "9.0",
+        "year": "1957"
+    },
+    {
+        "rank": 6,
+        "title": "Schindler's List",
+        "rating": "8.9",
+        "year": "1993"
+    },
+    {
+        "rank": 7,
+        "title": "The Lord of the Rings: The Return of the King",
+        "rating": "8.9",
+        "year": "2003"
+    },
+    {
+        "rank": 8,
+        "title": "Pulp Fiction",
+        "rating": "8.8",
+        "year": "1994"
+    },
+    {
+        "rank": 9,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "rating": "8.8",
+        "year": "2001"
+    },
+    {
+        "rank": 10,
+        "title": "The Good, the Bad and the Ugly",
+        "rating": "8.8",
+        "year": "1966"
+    },
+    {
+        "rank": 11,
+        "title": "Forrest Gump",
+        "rating": "8.8",
+        "year": "1994"
+    },
+    {
+        "rank": 12,
+        "title": "Fight Club",
+        "rating": "8.7",
+        "year": "1999"
+    },
+    {
+        "rank": 13,
+        "title": "The Lord of the Rings: The Two Towers",
+        "rating": "8.7",
+        "year": "2002"
+    },
+    {
+        "rank": 14,
+        "title": "Inception",
+        "rating": "8.7",
+        "year": "2010"
+    },
+    {
+        "rank": 15,
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "rating": "8.7",
+        "year": "1980"
+    },
+    {
+        "rank": 16,
+        "title": "The Matrix",
+        "rating": "8.7",
+        "year": "1999"
+    },
+    {
+        "rank": 17,
+        "title": "Goodfellas",
+        "rating": "8.7",
+        "year": "1990"
+    },
+    {
+        "rank": 18,
+        "title": "One Flew Over the Cuckoo's Nest",
+        "rating": "8.6",
+        "year": "1975"
+    },
+    {
+        "rank": 19,
+        "title": "Se7en",
+        "rating": "8.6",
+        "year": "1995"
+    },
+    {
+        "rank": 20,
+        "title": "It's a Wonderful Life",
+        "rating": "8.6",
+        "year": "1946"
+    },
+    {
+        "rank": 21,
+        "title": "Seven Samurai",
+        "rating": "8.6",
+        "year": "1954"
+    },
+    {
+        "rank": 22,
+        "title": "The Silence of the Lambs",
+        "rating": "8.6",
+        "year": "1991"
+    },
+    {
+        "rank": 23,
+        "title": "Saving Private Ryan",
+        "rating": "8.6",
+        "year": "1998"
+    },
+    {
+        "rank": 24,
+        "title": "City of God",
+        "rating": "8.6",
+        "year": "2002"
+    },
+    {
+        "rank": 25,
+        "title": "Interstellar",
+        "rating": "8.6",
+        "year": "2014"
+    },
+    {
+        "rank": 26,
+        "title": "Life Is Beautiful",
+        "rating": "8.6",
+        "year": "1997"
+    },
+    {
+        "rank": 27,
+        "title": "The Green Mile",
+        "rating": "8.6",
+        "year": "1999"
+    },
+    {
+        "rank": 28,
+        "title": "Star Wars: Episode IV - A New Hope",
+        "rating": "8.5",
+        "year": "1977"
+    },
+    {
+        "rank": 29,
+        "title": "Terminator 2: Judgment Day",
+        "rating": "8.5",
+        "year": "1991"
+    },
+    {
+        "rank": 30,
+        "title": "Back to the Future",
+        "rating": "8.5",
+        "year": "1985"
+    },
+    {
+        "rank": 31,
+        "title": "Spirited Away",
+        "rating": "8.5",
+        "year": "2001"
+    },
+    {
+        "rank": 32,
+        "title": "The Pianist",
+        "rating": "8.5",
+        "year": "2002"
+    },
+    {
+        "rank": 33,
+        "title": "Psycho",
+        "rating": "8.5",
+        "year": "1960"
+    },
+    {
+        "rank": 34,
+        "title": "Parasite",
+        "rating": "8.5",
+        "year": "2019"
+    },
+    {
+        "rank": 35,
+        "title": "L\u00e9on: The Professional",
+        "rating": "8.5",
+        "year": "1994"
+    },
+    {
+        "rank": 36,
+        "title": "Gladiator",
+        "rating": "8.5",
+        "year": "2000"
+    },
+    {
+        "rank": 37,
+        "title": "The Lion King",
+        "rating": "8.5",
+        "year": "1994"
+    },
+    {
+        "rank": 38,
+        "title": "American History X",
+        "rating": "8.5",
+        "year": "1998"
+    },
+    {
+        "rank": 39,
+        "title": "The Departed",
+        "rating": "8.5",
+        "year": "2006"
+    },
+    {
+        "rank": 40,
+        "title": "Whiplash",
+        "rating": "8.5",
+        "year": "2014"
+    },
+    {
+        "rank": 41,
+        "title": "The Prestige",
+        "rating": "8.5",
+        "year": "2006"
+    },
+    {
+        "rank": 42,
+        "title": "The Usual Suspects",
+        "rating": "8.5",
+        "year": "1995"
+    },
+    {
+        "rank": 43,
+        "title": "Casablanca",
+        "rating": "8.5",
+        "year": "1942"
+    },
+    {
+        "rank": 44,
+        "title": "Grave of the Fireflies",
+        "rating": "8.5",
+        "year": "1988"
+    },
+    {
+        "rank": 45,
+        "title": "Harakiri",
+        "rating": "8.5",
+        "year": "1962"
+    },
+    {
+        "rank": 46,
+        "title": "The Intouchables",
+        "rating": "8.5",
+        "year": "2011"
+    },
+    {
+        "rank": 47,
+        "title": "Modern Times",
+        "rating": "8.4",
+        "year": "1936"
+    },
+    {
+        "rank": 48,
+        "title": "Once Upon a Time in the West",
+        "rating": "8.4",
+        "year": "1968"
+    },
+    {
+        "rank": 49,
+        "title": "Cinema Paradiso",
+        "rating": "8.4",
+        "year": "1988"
+    },
+    {
+        "rank": 50,
+        "title": "Rear Window",
+        "rating": "8.4",
+        "year": "1954"
+    },
+    {
+        "rank": 51,
+        "title": "Alien",
+        "rating": "8.4",
+        "year": "1979"
+    },
+    {
+        "rank": 52,
+        "title": "City Lights",
+        "rating": "8.4",
+        "year": "1931"
+    },
+    {
+        "rank": 53,
+        "title": "Apocalypse Now",
+        "rating": "8.4",
+        "year": "1979"
+    },
+    {
+        "rank": 54,
+        "title": "Memento",
+        "rating": "8.4",
+        "year": "2000"
+    },
+    {
+        "rank": 55,
+        "title": "Django Unchained",
+        "rating": "8.4",
+        "year": "2012"
+    },
+    {
+        "rank": 56,
+        "title": "Indiana Jones and the Raiders of the Lost Ark",
+        "rating": "8.4",
+        "year": "1981"
+    },
+    {
+        "rank": 57,
+        "title": "WALL\u00b7E",
+        "rating": "8.4",
+        "year": "2008"
+    },
+    {
+        "rank": 58,
+        "title": "The Lives of Others",
+        "rating": "8.4",
+        "year": "2006"
+    },
+    {
+        "rank": 59,
+        "title": "Sunset Blvd.",
+        "rating": "8.4",
+        "year": "1950"
+    },
+    {
+        "rank": 60,
+        "title": "Paths of Glory",
+        "rating": "8.4",
+        "year": "1957"
+    },
+    {
+        "rank": 61,
+        "title": "The Shining",
+        "rating": "8.4",
+        "year": "1980"
+    },
+    {
+        "rank": 62,
+        "title": "The Great Dictator",
+        "rating": "8.4",
+        "year": "1940"
+    },
+    {
+        "rank": 63,
+        "title": "Avengers: Infinity War",
+        "rating": "8.4",
+        "year": "2018"
+    },
+    {
+        "rank": 64,
+        "title": "Witness for the Prosecution",
+        "rating": "8.4",
+        "year": "1957"
+    },
+    {
+        "rank": 65,
+        "title": "Aliens",
+        "rating": "8.3",
+        "year": "1986"
+    },
+    {
+        "rank": 66,
+        "title": "Spider-Man: Into the Spider-Verse",
+        "rating": "8.3",
+        "year": "2018"
+    },
+    {
+        "rank": 67,
+        "title": "American Beauty",
+        "rating": "8.3",
+        "year": "1999"
+    },
+    {
+        "rank": 68,
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "rating": "8.3",
+        "year": "1964"
+    },
+    {
+        "rank": 69,
+        "title": "The Dark Knight Rises",
+        "rating": "8.3",
+        "year": "2012"
+    },
+    {
+        "rank": 70,
+        "title": "Inglourious Basterds",
+        "rating": "8.3",
+        "year": "2009"
+    },
+    {
+        "rank": 71,
+        "title": "Oldboy",
+        "rating": "8.3",
+        "year": "2003"
+    },
+    {
+        "rank": 72,
+        "title": "Amadeus",
+        "rating": "8.3",
+        "year": "1984"
+    },
+    {
+        "rank": 73,
+        "title": "Coco",
+        "rating": "8.3",
+        "year": "2017"
+    },
+    {
+        "rank": 74,
+        "title": "Toy Story",
+        "rating": "8.3",
+        "year": "1995"
+    },
+    {
+        "rank": 75,
+        "title": "Braveheart",
+        "rating": "8.3",
+        "year": "1995"
+    },
+    {
+        "rank": 76,
+        "title": "Joker",
+        "rating": "8.3",
+        "year": "2019"
+    },
+    {
+        "rank": 77,
+        "title": "Das Boot",
+        "rating": "8.3",
+        "year": "1981"
+    },
+    {
+        "rank": 78,
+        "title": "Avengers: Endgame",
+        "rating": "8.3",
+        "year": "2019"
+    },
+    {
+        "rank": 79,
+        "title": "Princess Mononoke",
+        "rating": "8.3",
+        "year": "1997"
+    },
+    {
+        "rank": 80,
+        "title": "Good Will Hunting",
+        "rating": "8.3",
+        "year": "1997"
+    },
+    {
+        "rank": 81,
+        "title": "Once Upon a Time in America",
+        "rating": "8.3",
+        "year": "1984"
+    },
+    {
+        "rank": 82,
+        "title": "Your Name.",
+        "rating": "8.3",
+        "year": "2016"
+    },
+    {
+        "rank": 83,
+        "title": "Singin' in the Rain",
+        "rating": "8.3",
+        "year": "1952"
+    },
+    {
+        "rank": 84,
+        "title": "3 Idiots",
+        "rating": "8.3",
+        "year": "2009"
+    },
+    {
+        "rank": 85,
+        "title": "Requiem for a Dream",
+        "rating": "8.3",
+        "year": "2000"
+    },
+    {
+        "rank": 86,
+        "title": "High and Low",
+        "rating": "8.3",
+        "year": "1963"
+    },
+    {
+        "rank": 87,
+        "title": "Toy Story 3",
+        "rating": "8.3",
+        "year": "2010"
+    },
+    {
+        "rank": 88,
+        "title": "Capernaum",
+        "rating": "8.3",
+        "year": "2018"
+    },
+    {
+        "rank": 89,
+        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "rating": "8.3",
+        "year": "1983"
+    },
+    {
+        "rank": 90,
+        "title": "2001: A Space Odyssey",
+        "rating": "8.3",
+        "year": "1968"
+    },
+    {
+        "rank": 91,
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "rating": "8.3",
+        "year": "2004"
+    },
+    {
+        "rank": 92,
+        "title": "Come and See",
+        "rating": "8.3",
+        "year": "1985"
+    },
+    {
+        "rank": 93,
+        "title": "The Hunt",
+        "rating": "8.3",
+        "year": "2012"
+    },
+    {
+        "rank": 94,
+        "title": "Reservoir Dogs",
+        "rating": "8.3",
+        "year": "1992"
+    },
+    {
+        "rank": 95,
+        "title": "Lawrence of Arabia",
+        "rating": "8.2",
+        "year": "1962"
+    },
+    {
+        "rank": 96,
+        "title": "Citizen Kane",
+        "rating": "8.2",
+        "year": "1941"
+    },
+    {
+        "rank": 97,
+        "title": "M",
+        "rating": "8.2",
+        "year": "1931"
+    },
+    {
+        "rank": 98,
+        "title": "Ikiru",
+        "rating": "8.2",
+        "year": "1952"
+    },
+    {
+        "rank": 99,
+        "title": "North by Northwest",
+        "rating": "8.2",
+        "year": "1959"
+    },
+    {
+        "rank": 100,
+        "title": "The Apartment",
+        "rating": "8.2",
+        "year": "1960"
+    },
+    {
+        "rank": 101,
+        "title": "Vertigo",
+        "rating": "8.2",
+        "year": "1958"
+    },
+    {
+        "rank": 102,
+        "title": "Am\u00e9lie",
+        "rating": "8.2",
+        "year": "2001"
+    },
+    {
+        "rank": 103,
+        "title": "Double Indemnity",
+        "rating": "8.2",
+        "year": "1944"
+    },
+    {
+        "rank": 104,
+        "title": "A Clockwork Orange",
+        "rating": "8.2",
+        "year": "1971"
+    },
+    {
+        "rank": 105,
+        "title": "Full Metal Jacket",
+        "rating": "8.2",
+        "year": "1987"
+    },
+    {
+        "rank": 106,
+        "title": "Scarface",
+        "rating": "8.2",
+        "year": "1983"
+    },
+    {
+        "rank": 107,
+        "title": "Incendies",
+        "rating": "8.2",
+        "year": "2010"
+    },
+    {
+        "rank": 108,
+        "title": "Heat",
+        "rating": "8.2",
+        "year": "1995"
+    },
+    {
+        "rank": 109,
+        "title": "Hamilton",
+        "rating": "8.2",
+        "year": "2020"
+    },
+    {
+        "rank": 110,
+        "title": "Up",
+        "rating": "8.2",
+        "year": "2009"
+    },
+    {
+        "rank": 111,
+        "title": "To Kill a Mockingbird",
+        "rating": "8.2",
+        "year": "1962"
+    },
+    {
+        "rank": 112,
+        "title": "The Sting",
+        "rating": "8.2",
+        "year": "1973"
+    },
+    {
+        "rank": 113,
+        "title": "A Separation",
+        "rating": "8.2",
+        "year": "2011"
+    },
+    {
+        "rank": 114,
+        "title": "Metropolis",
+        "rating": "8.2",
+        "year": "1927"
+    },
+    {
+        "rank": 115,
+        "title": "Die Hard",
+        "rating": "8.2",
+        "year": "1988"
+    },
+    {
+        "rank": 116,
+        "title": "L.A. Confidential",
+        "rating": "8.2",
+        "year": "1997"
+    },
+    {
+        "rank": 117,
+        "title": "Indiana Jones and the Last Crusade",
+        "rating": "8.2",
+        "year": "1989"
+    },
+    {
+        "rank": 118,
+        "title": "Taxi Driver",
+        "rating": "8.2",
+        "year": "1976"
+    },
+    {
+        "rank": 119,
+        "title": "Snatch",
+        "rating": "8.2",
+        "year": "2000"
+    },
+    {
+        "rank": 120,
+        "title": "Bicycle Thieves",
+        "rating": "8.2",
+        "year": "1948"
+    },
+    {
+        "rank": 121,
+        "title": "Like Stars on Earth",
+        "rating": "8.2",
+        "year": "2007"
+    },
+    {
+        "rank": 122,
+        "title": "1917",
+        "rating": "8.2",
+        "year": "2019"
+    },
+    {
+        "rank": 123,
+        "title": "Top Gun: Maverick",
+        "rating": "8.2",
+        "year": "2022"
+    },
+    {
+        "rank": 124,
+        "title": "Downfall",
+        "rating": "8.2",
+        "year": "2004"
+    },
+    {
+        "rank": 125,
+        "title": "Dangal",
+        "rating": "8.2",
+        "year": "2016"
+    },
+    {
+        "rank": 126,
+        "title": "For a Few Dollars More",
+        "rating": "8.2",
+        "year": "1965"
+    },
+    {
+        "rank": 127,
+        "title": "Batman Begins",
+        "rating": "8.2",
+        "year": "2005"
+    },
+    {
+        "rank": 128,
+        "title": "The Kid",
+        "rating": "8.2",
+        "year": "1921"
+    },
+    {
+        "rank": 129,
+        "title": "Some Like It Hot",
+        "rating": "8.2",
+        "year": "1959"
+    },
+    {
+        "rank": 130,
+        "title": "The Father",
+        "rating": "8.2",
+        "year": "2020"
+    },
+    {
+        "rank": 131,
+        "title": "The Wolf of Wall Street",
+        "rating": "8.2",
+        "year": "2013"
+    },
+    {
+        "rank": 132,
+        "title": "All About Eve",
+        "rating": "8.2",
+        "year": "1950"
+    },
+    {
+        "rank": 133,
+        "title": "Green Book",
+        "rating": "8.2",
+        "year": "2018"
+    },
+    {
+        "rank": 134,
+        "title": "Judgment at Nuremberg",
+        "rating": "8.2",
+        "year": "1961"
+    },
+    {
+        "rank": 135,
+        "title": "Ran",
+        "rating": "8.2",
+        "year": "1985"
+    },
+    {
+        "rank": 136,
+        "title": "Casino",
+        "rating": "8.2",
+        "year": "1995"
+    },
+    {
+        "rank": 137,
+        "title": "The Truman Show",
+        "rating": "8.2",
+        "year": "1998"
+    },
+    {
+        "rank": 138,
+        "title": "There Will Be Blood",
+        "rating": "8.2",
+        "year": "2007"
+    },
+    {
+        "rank": 139,
+        "title": "Pan's Labyrinth",
+        "rating": "8.2",
+        "year": "2006"
+    },
+    {
+        "rank": 140,
+        "title": "Unforgiven",
+        "rating": "8.2",
+        "year": "1992"
+    },
+    {
+        "rank": 141,
+        "title": "Shutter Island",
+        "rating": "8.2",
+        "year": "2010"
+    },
+    {
+        "rank": 142,
+        "title": "The Sixth Sense",
+        "rating": "8.2",
+        "year": "1999"
+    },
+    {
+        "rank": 143,
+        "title": "Jurassic Park",
+        "rating": "8.2",
+        "year": "1993"
+    },
+    {
+        "rank": 144,
+        "title": "A Beautiful Mind",
+        "rating": "8.2",
+        "year": "2001"
+    },
+    {
+        "rank": 145,
+        "title": "Yojimbo",
+        "rating": "8.1",
+        "year": "1961"
+    },
+    {
+        "rank": 146,
+        "title": "The Treasure of the Sierra Madre",
+        "rating": "8.1",
+        "year": "1948"
+    },
+    {
+        "rank": 147,
+        "title": "Monty Python and the Holy Grail",
+        "rating": "8.1",
+        "year": "1975"
+    },
+    {
+        "rank": 148,
+        "title": "No Country for Old Men",
+        "rating": "8.1",
+        "year": "2007"
+    },
+    {
+        "rank": 149,
+        "title": "Kill Bill: Vol. 1",
+        "rating": "8.1",
+        "year": "2003"
+    },
+    {
+        "rank": 150,
+        "title": "The Great Escape",
+        "rating": "8.1",
+        "year": "1963"
+    },
+    {
+        "rank": 151,
+        "title": "Guardians of the Galaxy Vol. 3",
+        "rating": "8.1",
+        "year": "2023"
+    },
+    {
+        "rank": 152,
+        "title": "Rashomon",
+        "rating": "8.1",
+        "year": "1950"
+    },
+    {
+        "rank": 153,
+        "title": "The Thing",
+        "rating": "8.1",
+        "year": "1982"
+    },
+    {
+        "rank": 154,
+        "title": "Finding Nemo",
+        "rating": "8.1",
+        "year": "2003"
+    },
+    {
+        "rank": 155,
+        "title": "Spider-Man: No Way Home",
+        "rating": "8.1",
+        "year": "2021"
+    },
+    {
+        "rank": 156,
+        "title": "The Elephant Man",
+        "rating": "8.1",
+        "year": "1980"
+    },
+    {
+        "rank": 157,
+        "title": "Chinatown",
+        "rating": "8.1",
+        "year": "1974"
+    },
+    {
+        "rank": 158,
+        "title": "V for Vendetta",
+        "rating": "8.1",
+        "year": "2005"
+    },
+    {
+        "rank": 159,
+        "title": "Raging Bull",
+        "rating": "8.1",
+        "year": "1980"
+    },
+    {
+        "rank": 160,
+        "title": "Gone with the Wind",
+        "rating": "8.1",
+        "year": "1939"
+    },
+    {
+        "rank": 161,
+        "title": "Dial M for Murder",
+        "rating": "8.1",
+        "year": "1954"
+    },
+    {
+        "rank": 162,
+        "title": "Lock, Stock and Two Smoking Barrels",
+        "rating": "8.1",
+        "year": "1998"
+    },
+    {
+        "rank": 163,
+        "title": "Inside Out",
+        "rating": "8.1",
+        "year": "2015"
+    },
+    {
+        "rank": 164,
+        "title": "Howl's Moving Castle",
+        "rating": "8.1",
+        "year": "2004"
+    },
+    {
+        "rank": 165,
+        "title": "The Secret in Their Eyes",
+        "rating": "8.1",
+        "year": "2009"
+    },
+    {
+        "rank": 166,
+        "title": "Three Billboards Outside Ebbing, Missouri",
+        "rating": "8.1",
+        "year": "2017"
+    },
+    {
+        "rank": 167,
+        "title": "Trainspotting",
+        "rating": "8.1",
+        "year": "1996"
+    },
+    {
+        "rank": 168,
+        "title": "Prisoners",
+        "rating": "8.1",
+        "year": "2013"
+    },
+    {
+        "rank": 169,
+        "title": "The Bridge on the River Kwai",
+        "rating": "8.1",
+        "year": "1957"
+    },
+    {
+        "rank": 170,
+        "title": "Fargo",
+        "rating": "8.1",
+        "year": "1996"
+    },
+    {
+        "rank": 171,
+        "title": "Warrior",
+        "rating": "8.1",
+        "year": "2011"
+    },
+    {
+        "rank": 172,
+        "title": "Gran Torino",
+        "rating": "8.1",
+        "year": "2008"
+    },
+    {
+        "rank": 173,
+        "title": "Catch Me If You Can",
+        "rating": "8.1",
+        "year": "2002"
+    },
+    {
+        "rank": 174,
+        "title": "My Neighbor Totoro",
+        "rating": "8.1",
+        "year": "1988"
+    },
+    {
+        "rank": 175,
+        "title": "Million Dollar Baby",
+        "rating": "8.1",
+        "year": "2004"
+    },
+    {
+        "rank": 176,
+        "title": "Children of Heaven",
+        "rating": "8.1",
+        "year": "1997"
+    },
+    {
+        "rank": 177,
+        "title": "Blade Runner",
+        "rating": "8.1",
+        "year": "1982"
+    },
+    {
+        "rank": 178,
+        "title": "The Gold Rush",
+        "rating": "8.1",
+        "year": "1925"
+    },
+    {
+        "rank": 179,
+        "title": "Klaus",
+        "rating": "8.1",
+        "year": "2019"
+    },
+    {
+        "rank": 180,
+        "title": "Harry Potter and the Deathly Hallows: Part 2",
+        "rating": "8.1",
+        "year": "2011"
+    },
+    {
+        "rank": 181,
+        "title": "Before Sunrise",
+        "rating": "8.1",
+        "year": "1995"
+    },
+    {
+        "rank": 182,
+        "title": "12 Years a Slave",
+        "rating": "8.1",
+        "year": "2013"
+    },
+    {
+        "rank": 183,
+        "title": "Ben-Hur",
+        "rating": "8.1",
+        "year": "1959"
+    },
+    {
+        "rank": 184,
+        "title": "The Grand Budapest Hotel",
+        "rating": "8.1",
+        "year": "2014"
+    },
+    {
+        "rank": 185,
+        "title": "On the Waterfront",
+        "rating": "8.1",
+        "year": "1954"
+    },
+    {
+        "rank": 186,
+        "title": "Gone Girl",
+        "rating": "8.1",
+        "year": "2014"
+    },
+    {
+        "rank": 187,
+        "title": "The General",
+        "rating": "8.1",
+        "year": "1926"
+    },
+    {
+        "rank": 188,
+        "title": "Barry Lyndon",
+        "rating": "8.1",
+        "year": "1975"
+    },
+    {
+        "rank": 189,
+        "title": "Wild Strawberries",
+        "rating": "8.1",
+        "year": "1957"
+    },
+    {
+        "rank": 190,
+        "title": "In the Name of the Father",
+        "rating": "8.1",
+        "year": "1993"
+    },
+    {
+        "rank": 191,
+        "title": "The Deer Hunter",
+        "rating": "8.1",
+        "year": "1978"
+    },
+    {
+        "rank": 192,
+        "title": "Hacksaw Ridge",
+        "rating": "8.1",
+        "year": "2016"
+    },
+    {
+        "rank": 193,
+        "title": "The Third Man",
+        "rating": "8.1",
+        "year": "1949"
+    },
+    {
+        "rank": 194,
+        "title": "Memories of Murder",
+        "rating": "8.1",
+        "year": "2003"
+    },
+    {
+        "rank": 195,
+        "title": "The Wages of Fear",
+        "rating": "8.1",
+        "year": "1953"
+    },
+    {
+        "rank": 196,
+        "title": "Sherlock Jr.",
+        "rating": "8.1",
+        "year": "1924"
+    },
+    {
+        "rank": 197,
+        "title": "Wild Tales",
+        "rating": "8.1",
+        "year": "2014"
+    },
+    {
+        "rank": 198,
+        "title": "Mr. Smith Goes to Washington",
+        "rating": "8.1",
+        "year": "1939"
+    },
+    {
+        "rank": 199,
+        "title": "Mad Max: Fury Road",
+        "rating": "8.1",
+        "year": "2015"
+    },
+    {
+        "rank": 200,
+        "title": "Mary and Max",
+        "rating": "8.1",
+        "year": "2009"
+    },
+    {
+        "rank": 201,
+        "title": "Dead Poets Society",
+        "rating": "8.1",
+        "year": "1989"
+    },
+    {
+        "rank": 202,
+        "title": "How to Train Your Dragon",
+        "rating": "8.1",
+        "year": "2010"
+    },
+    {
+        "rank": 203,
+        "title": "Monsters, Inc.",
+        "rating": "8.1",
+        "year": "2001"
+    },
+    {
+        "rank": 204,
+        "title": "The Seventh Seal",
+        "rating": "8.1",
+        "year": "1957"
+    },
+    {
+        "rank": 205,
+        "title": "Jaws",
+        "rating": "8.1",
+        "year": "1975"
+    },
+    {
+        "rank": 206,
+        "title": "Room",
+        "rating": "8.1",
+        "year": "2015"
+    },
+    {
+        "rank": 207,
+        "title": "The Big Lebowski",
+        "rating": "8.1",
+        "year": "1998"
+    },
+    {
+        "rank": 208,
+        "title": "Tokyo Story",
+        "rating": "8.1",
+        "year": "1953"
+    },
+    {
+        "rank": 209,
+        "title": "Ford v Ferrari",
+        "rating": "8.1",
+        "year": "2019"
+    },
+    {
+        "rank": 210,
+        "title": "The Passion of Joan of Arc",
+        "rating": "8.0",
+        "year": "1928"
+    },
+    {
+        "rank": 211,
+        "title": "Hotel Rwanda",
+        "rating": "8.0",
+        "year": "2004"
+    },
+    {
+        "rank": 212,
+        "title": "Rocky",
+        "rating": "8.0",
+        "year": "1976"
+    },
+    {
+        "rank": 213,
+        "title": "Ratatouille",
+        "rating": "8.0",
+        "year": "2007"
+    },
+    {
+        "rank": 214,
+        "title": "Platoon",
+        "rating": "8.0",
+        "year": "1986"
+    },
+    {
+        "rank": 215,
+        "title": "Logan",
+        "rating": "8.0",
+        "year": "2017"
+    },
+    {
+        "rank": 216,
+        "title": "Spotlight",
+        "rating": "8.0",
+        "year": "2015"
+    },
+    {
+        "rank": 217,
+        "title": "The Terminator",
+        "rating": "8.0",
+        "year": "1984"
+    },
+    {
+        "rank": 218,
+        "title": "Stand by Me",
+        "rating": "8.0",
+        "year": "1986"
+    },
+    {
+        "rank": 219,
+        "title": "Rush",
+        "rating": "8.0",
+        "year": "2013"
+    },
+    {
+        "rank": 220,
+        "title": "Network",
+        "rating": "8.0",
+        "year": "1976"
+    },
+    {
+        "rank": 221,
+        "title": "Before Sunset",
+        "rating": "8.0",
+        "year": "2004"
+    },
+    {
+        "rank": 222,
+        "title": "The Wizard of Oz",
+        "rating": "8.0",
+        "year": "1939"
+    },
+    {
+        "rank": 223,
+        "title": "Into the Wild",
+        "rating": "8.0",
+        "year": "2007"
+    },
+    {
+        "rank": 224,
+        "title": "The Best Years of Our Lives",
+        "rating": "8.0",
+        "year": "1946"
+    },
+    {
+        "rank": 225,
+        "title": "The Exorcist",
+        "rating": "8.0",
+        "year": "1973"
+    },
+    {
+        "rank": 226,
+        "title": "Groundhog Day",
+        "rating": "8.0",
+        "year": "1993"
+    },
+    {
+        "rank": 227,
+        "title": "The Incredibles",
+        "rating": "8.0",
+        "year": "2004"
+    },
+    {
+        "rank": 228,
+        "title": "La haine",
+        "rating": "8.0",
+        "year": "1995"
+    },
+    {
+        "rank": 229,
+        "title": "To Be or Not to Be",
+        "rating": "8.0",
+        "year": "1942"
+    },
+    {
+        "rank": 230,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "rating": "8.0",
+        "year": "2003"
+    },
+    {
+        "rank": 231,
+        "title": "Hachi: A Dog's Tale",
+        "rating": "8.0",
+        "year": "2009"
+    },
+    {
+        "rank": 232,
+        "title": "The Grapes of Wrath",
+        "rating": "8.0",
+        "year": "1940"
+    },
+    {
+        "rank": 233,
+        "title": "The Battle of Algiers",
+        "rating": "8.0",
+        "year": "1966"
+    },
+    {
+        "rank": 234,
+        "title": "Pather Panchali",
+        "rating": "8.0",
+        "year": "1955"
+    },
+    {
+        "rank": 235,
+        "title": "Amores Perros",
+        "rating": "8.0",
+        "year": "2000"
+    },
+    {
+        "rank": 236,
+        "title": "Jai Bhim",
+        "rating": "8.0",
+        "year": "2021"
+    },
+    {
+        "rank": 237,
+        "title": "My Father and My Son",
+        "rating": "8.0",
+        "year": "2005"
+    },
+    {
+        "rank": 238,
+        "title": "The Handmaiden",
+        "rating": "8.0",
+        "year": "2016"
+    },
+    {
+        "rank": 239,
+        "title": "Rebecca",
+        "rating": "8.0",
+        "year": "1940"
+    },
+    {
+        "rank": 240,
+        "title": "Cool Hand Luke",
+        "rating": "8.0",
+        "year": "1967"
+    },
+    {
+        "rank": 241,
+        "title": "The Sound of Music",
+        "rating": "8.0",
+        "year": "1965"
+    },
+    {
+        "rank": 242,
+        "title": "It Happened One Night",
+        "rating": "8.0",
+        "year": "1934"
+    },
+    {
+        "rank": 243,
+        "title": "The 400 Blows",
+        "rating": "8.0",
+        "year": "1959"
+    },
+    {
+        "rank": 244,
+        "title": "Persona",
+        "rating": "8.0",
+        "year": "1966"
+    },
+    {
+        "rank": 245,
+        "title": "Life of Brian",
+        "rating": "8.0",
+        "year": "1979"
+    },
+    {
+        "rank": 246,
+        "title": "The Iron Giant",
+        "rating": "8.0",
+        "year": "1999"
+    },
+    {
+        "rank": 247,
+        "title": "The Help",
+        "rating": "8.0",
+        "year": "2011"
+    },
+    {
+        "rank": 248,
+        "title": "Aladdin",
+        "rating": "8.0",
+        "year": "1992"
+    },
+    {
+        "rank": 249,
+        "title": "Dances with Wolves",
+        "rating": "8.0",
+        "year": "1990"
+    },
+    {
+        "rank": 250,
+        "title": "Dersu Uzala",
+        "rating": "8.0",
+        "year": "1975"
+    }
+]
