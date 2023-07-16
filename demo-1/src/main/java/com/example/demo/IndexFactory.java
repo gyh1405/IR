@@ -2,10 +2,13 @@ package com.example.demo;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.StringReader;
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.lucene.analysis.CharArraySet;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.en.PorterStemFilter;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -81,8 +84,15 @@ public class IndexFactory {
 
                 Object titleValue = jsonObject.get("title");
                 if (titleValue != null) {
+                    // Index the title field with stemming
+                    StandardAnalyzer analyzer = createAnalyzerWithStopwords();
+                    TokenStream titleTokenStream = analyzer.tokenStream("title", new StringReader(titleValue.toString()));
+                    titleTokenStream = new PorterStemFilter(titleTokenStream);
+
                     doc.add(new TextField("title", titleValue.toString(), Field.Store.YES));
                 }
+
+                w.addDocument(doc);
 
                 Object contentValue = jsonObject.get("content");
                 if (contentValue != null) {
