@@ -113,7 +113,7 @@ const SearchEngine = ({ solrApiUrl }) => {
       {searchResults.length > 0 ? (
         <div className='w-1/2'>
           {searchResults.map((item, i) => (
-            console.log(item),
+            console.log("data123456:", item),
             <div key={i} className='mb-4 p-3 shadow-lg rounded-lg bg-white'>
               <h3 className='text-2xl mb-2'>{item["fields"][0]["charSequenceValue"]}</h3>
             </div>
