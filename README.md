@@ -7,9 +7,11 @@
 
 
 ## To Start Backend
-Open Eclipse, run `demoApplication.java` as Spring boot app.
+Before Running the Spring Boot Server, at the `application.properties` change the directory of saved index.
 
-`http://localhost:8080/`
+Open Eclipse, run `DemoApplication.java` as Spring boot app.
+
+Server at `http://localhost:8080/`
 
 ## To Start Frontend
 Change directory to "gui" folder
