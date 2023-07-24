@@ -7,7 +7,7 @@
 
 
 ## To Start Backend
-Open Eclipse, run `demoApplication.java` as Spring boot server.
+Open Eclipse, run `demoApplication.java` as Spring boot app.
 
 `http://localhost:8080/`
 
