@@ -8,6 +8,7 @@
 
 ## To Start Backend
 Before Running the Spring Boot Server, at the `application.properties` change the directory of saved index.
+Remember to add META-INF, `additional-spring-configuration-metadata.json`
 
 Open Eclipse, run `DemoApplication.java` as Spring boot app.
 
