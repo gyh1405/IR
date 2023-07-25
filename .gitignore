@@ -36,3 +36,5 @@ logs/
 .venv
 
 Backend/pylucene-9.6.0
+
+LuceneIndex/
