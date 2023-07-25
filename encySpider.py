@@ -8,6 +8,8 @@ class EncySpider(scrapy.Spider):
     start_urls = ['https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/glasgow-ellen-1873-1945', 
                   'https://www.encyclopedia.com/books/politics-and-business-magazines/systems-computer-technology-corp',
                   'https://www.encyclopedia.com/history/modern-europe/british-and-irish-history/united-kingdom-great-britain-and-northern-ireland',
+                  'https://www.encyclopedia.com/reference/social-sciences-magazines/gambling-united-states-overview',
+                  'https://www.encyclopedia.com/science-and-technology/biology-and-genetics/biology-general/kingdom',
                   'https://www.encyclopedia.com/earth-and-environment/atmosphere-and-weather/weather-and-climate-terms-and-concepts/fog',
                   'https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/wars-and-empires',
                   'https://www.encyclopedia.com/education/dictionaries-thesauruses-pictures-and-press-releases/sugar-doctor',
@@ -36,6 +38,15 @@ class EncySpider(scrapy.Spider):
         self.url_depth = {}  # Store depth of each URL
         self.processed_content = set()  # Store processed content
 
+        # Read the file and add each URL to the set
+        try:
+            with open('url_frontier.txt', 'r') as f:
+                for line in f:
+                    url = line.strip()  # Remove newline character
+                    self.url_frontier.add(url)
+        except FileNotFoundError:
+            self.logger.info("url_frontier.txt not found. Starting with an empty set.")
+
     def start_requests(self):
         for url in self.start_urls:
             yield scrapy.Request(url, callback=self.parse, meta={'depth': 0}, errback=self.errback_http_failure)
@@ -61,7 +72,7 @@ class EncySpider(scrapy.Spider):
         for result in result_container:
             result_title = result.xpath('.//h1[@class="doctitle"]/text()').get()
             result_content = result.xpath('.//div[@class="doccontentwrapper collapse show"]/p/text()').getall()
-            result_urls = result.xpath('.//a/@href').getall()
+            result_urls = result.xpath('.//a[not(contains(@style, "display:none"))]/@href').getall()  # Ignore hidden links
             result_timestamp = datetime.datetime.now()
 
             # Return data extracted
@@ -75,16 +86,13 @@ class EncySpider(scrapy.Spider):
             if result_urls and current_depth < self.max_depth:
                 for next_page in result_urls:
                     absolute_url = urljoin(response.url, next_page)
-                    # Update URL frontier and depth
-                    self.url_frontier.add(absolute_url)
-                    self.url_depth[absolute_url] = current_depth + 1
+                    if absolute_url not in self.url_frontier:  # Check if the URL has already been visited
+                        # Update URL frontier and depth
+                        self.url_frontier.add(absolute_url)
+                        self.url_depth[absolute_url] = current_depth + 1
 
-                    yield response.follow(next_page, self.parse, meta={'depth': current_depth + 1},
-                                          errback=self.errback_http_failure)
-                    # Write absolute URL to a text file
-                    with open('url_frontier.txt', 'a') as f:
-                        f.write(absolute_url + '\n')
-
+                        yield response.follow(next_page, self.parse, meta={'depth': current_depth + 1},
+                                              errback=self.errback_http_failure)
     def closed(self, reason):
         # Save the URL frontier to a text file when the spider is closed
         with open('url_frontier.txt', 'w') as f:
