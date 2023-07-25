@@ -34,3 +34,7 @@ npm run dev
 ```
 
 View the GUI at: `http://localhost:3000`
+
+## Our Demo Video
+
+[`Demo Video`](https://youtu.be/bSFtxAKH-J4)
