@@ -3,6 +3,8 @@ package com.example.demo.model;
 import java.util.List;
 
 public class ScrapedData {
+	private String url;
+	private String dateTime;
     private String title;
     private List<String> content;
     private String processedTitle;
@@ -15,6 +17,15 @@ public class ScrapedData {
         this.title = title;
         this.content = content;
     }
+    
+    public String getUrl() {
+        return url;
+    }
+    
+    public String getDatetime() {
+        return dateTime;
+    }
+    
 
     public String getTitle() {
         return title;
