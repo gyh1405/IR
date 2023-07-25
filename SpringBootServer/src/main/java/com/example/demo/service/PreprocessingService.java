@@ -64,41 +64,6 @@ public class PreprocessingService {
 		}
 	}
 
-//	private List<ScrapedData> readAndPreprocessJsonFile(String jsonFilePath) throws IOException {
-//		ClassPathResource resource = new ClassPathResource(jsonFilePath);
-//
-//		// todo: to clear the return list
-//
-//		try (InputStream inputStream = resource.getInputStream()) {
-//			ObjectMapper objectMapper = new ObjectMapper();
-//			List<ScrapedData> scrappedDataList = null;
-//			try {
-//				scrappedDataList = objectMapper.readValue(inputStream, new TypeReference<List<ScrapedData>>() {
-//				});
-//			} catch (IOException e) {
-//				System.err.println("Error parsing JSON line: " + e.getMessage());
-//				//throw new IllegalStateException("Failed to parse JSON file", e);
-//			}
-//
-//			// Preprocess each object in the array
-//			for (ScrapedData scrappedData : scrappedDataList) {
-//				String originalTitle = scrappedData.getTitle();
-//				List<String> originalContent = scrappedData.getContent();
-//				String processedTitle = applyStopWordsRemovalAndStemmingToText(originalTitle);
-//				List<String> processedContent = new ArrayList<>();
-//				for (String sentence : originalContent) {
-//					String processedSentence = applyStopWordsRemovalAndStemmingToText(sentence);
-//					processedContent.add(processedSentence);
-//				}
-//
-//				scrappedData.setProcessedTitle(processedTitle);
-//				scrappedData.setProcessedContent(processedContent);
-//			}
-//
-//			return scrappedDataList;
-//		}
-//	}
-	
 
 	
 	private List<ScrapedData> readAndPreprocessJsonFile(String jsonFilePath) throws IOException {

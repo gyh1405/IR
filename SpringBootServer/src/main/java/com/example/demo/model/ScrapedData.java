@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ScrapedData {
 	private String url;
-	private String dateTime;
+	private String datetime;
     private String title;
     private List<String> content;
     private String processedTitle;
@@ -23,7 +23,7 @@ public class ScrapedData {
     }
     
     public String getDatetime() {
-        return dateTime;
+        return datetime;
     }
     
 
