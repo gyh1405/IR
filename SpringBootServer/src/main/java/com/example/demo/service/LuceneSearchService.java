@@ -11,6 +11,7 @@ import org.apache.lucene.document.Document;
 
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.StoredFields;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
@@ -53,15 +54,24 @@ public class LuceneSearchService {
 	}
 
 	public List<Document> searchDocuments(String queryString) {
+		
+		String processedQuery = "";
 
 		// Preprocess the query
-		String processedQuery = applyStopWordsRemovalAndStemmingToText(queryString);
+		if(queryString == "a") {
+			processedQuery = "a";
+		} else {
+			processedQuery = applyStopWordsRemovalAndStemmingToText(queryString);
+		}
 
 		System.out.println("User Query (Preprocessed): " + processedQuery);
 
 		try (DirectoryReader reader = DirectoryReader.open(index)) {
 
 			IndexSearcher searcher = new IndexSearcher(reader);
+			
+			StoredFields storedFields = searcher.storedFields();
+			 
 			QueryParser queryParser = new QueryParser("content", analyzer);
 
 			Query query;
@@ -82,7 +92,7 @@ public class LuceneSearchService {
 			for (ScoreDoc scoreDoc : scoreDocs) {
 				int docId = scoreDoc.doc;
 				try {
-					Document document = searcher.doc(docId);
+					Document document = storedFields.document(docId);
 					results.add(document);
 				} catch (IOException e) {
 					throw new IllegalStateException("Failed to retrieve document", e);
@@ -189,7 +199,7 @@ public class LuceneSearchService {
 			}
 
 			// Calculate precision and recall
-			double precision = calculatePrecisionRecall(query, relevantDocumentsMap);
+			calculatePrecisionRecall(query, relevantDocumentsMap);
 
 			// Print the results
 			System.out.println("Test Query: " + query);

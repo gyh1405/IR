@@ -13,8 +13,8 @@
 //     try {
 //       const value = event.target.value;
 //       setSearchInput(value);
-     
-      
+
+
 //       const url = `${solrApiUrl}/search?query=${encodeURIComponent(value)}`;
 //       const response = await fetch(url, {
 //         method: 'GET',
@@ -73,12 +73,22 @@ import React, { useState } from 'react';
 const SearchEngine = ({ solrApiUrl }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchInput, setSearchInput] = useState('');
+  const [previousSearchInput, setPreviousSearchInput] = useState('');
 
   const handleSearch = async (event) => {
     try {
       const value = event.target.value;
       setSearchInput(value);
-      
+
+      if(value === "") return;
+      if(value === null) return;
+      if(value === undefined) return;
+      //if(value === previousSearchInput) return;
+      if(value === previousSearchInput.trim()) return;
+      if(value === "a") return;
+
+      setPreviousSearchInput(value.trim());
+
       const url = `${solrApiUrl}/search?query=${encodeURIComponent(value)}`;
       const response = await fetch(url, {
         method: 'GET',
@@ -113,10 +123,12 @@ const SearchEngine = ({ solrApiUrl }) => {
       {searchResults.length > 0 ? (
         <div className='w-1/2'>
           {searchResults.map((item, i) => (
-            console.log("data123456:", item),
+            //console.log("data123456:", item),
             <div key={i} className='mb-4 p-3 shadow-lg rounded-lg bg-white'>
               <h2 className='text-2xl mb-2'>{item["title"]}</h2>
-              <p className='text-1xl mb-2'>{item["url"]}</p>
+              <a href={item["url"]} className='text-blue-600 hover:underline'>
+                {item["url"]}
+              </a>
               <p className='text-1xl mb-2'>{item["dateTime"]}</p>
             </div>
           ))}
