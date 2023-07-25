@@ -2,11 +2,20 @@
 
 
 ## Prerequisite
+*   [`Link`](https://www.python.org/downloads/) Python version >3.11
+*   [`Link`](https://scrapy.org) Scrapy
 *   [`Link`](https://www.oracle.com/sg/java/technologies/downloads/) Java JDK
 *   [`Link`](https://nodejs.org/en) NodeJS
 
 
-## To Start Backend
+## To use Scrapy Crawler
+
+```
+scrapy runspider encyspider.py
+```
+
+
+## To Start Backend (Spring Boot Server)
 Before Running the Spring Boot Server, at the `application.properties` change the directory of saved index.
 Remember to add META-INF, `additional-spring-configuration-metadata.json`
 
